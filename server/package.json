@@ -1,7 +1,7 @@
 {
-  "name": "healthify-server",
+  "name": "carex-server",
   "version": "1.0.0",
-  "description": "Backend API for Healthify - Calorie Tracking App",
+  "description": "Backend API for CareX - Calorie Tracking App",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",

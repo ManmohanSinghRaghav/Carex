@@ -16,7 +16,7 @@ const LandingPage: React.FC = () => {
     },
     {
       name: 'Mobile Friendly',
-      description: 'Access Healthify from any device. Our responsive design works perfectly on desktop, tablet, and mobile.',
+      description: 'Access CareX from any device. Our responsive design works perfectly on desktop, tablet, and mobile.',
       icon: DevicePhoneMobileIcon,
     },
     {
@@ -41,7 +41,7 @@ const LandingPage: React.FC = () => {
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">H</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Healthify</span>
+              <span className="text-xl font-bold text-gray-900">CareX</span>
             </Link>
           </div>
           <div className="flex lg:flex-1 lg:justify-end space-x-4">
@@ -71,7 +71,7 @@ const LandingPage: React.FC = () => {
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Track Your Health Journey with{' '}
-              <span className="text-primary-600">Healthify</span>
+              <span className="text-primary-600">CareX</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Take control of your nutrition and achieve your health goals with our comprehensive calorie tracking platform. 
@@ -108,7 +108,7 @@ const LandingPage: React.FC = () => {
               Powerful features for your health journey
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Healthify provides all the tools you need to track, analyze, and improve your nutrition habits.
+              CareX provides all the tools you need to track, analyze, and improve your nutrition habits.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -137,7 +137,7 @@ const LandingPage: React.FC = () => {
               Ready to start your health journey?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-primary-200">
-              Join thousands of users who have already transformed their eating habits with Healthify.
+              Join thousands of users who have already transformed their eating habits with CareX.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -161,7 +161,7 @@ const LandingPage: React.FC = () => {
           </div>
           <div className="mt-8 md:order-1 md:mt-0">
             <p className="text-center text-xs leading-5 text-gray-500">
-              &copy; 2025 Healthify. Made with ❤️ for your health.
+              &copy; 2025 CareX. Made with ❤️ for your health.
             </p>
           </div>
         </div>

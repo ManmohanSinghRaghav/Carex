@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Test script for Healthify API endpoints
-echo "🧪 Testing Healthify API endpoints..."
+# Test script for CareX API endpoints
+echo "🧪 Testing CareX API endpoints..."
 echo
 
 BASE_URL="http://localhost:5000/api"

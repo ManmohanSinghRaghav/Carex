@@ -16,7 +16,7 @@ class ApiService {
     // Request interceptor to add auth token
     this.api.interceptors.request.use(
       (config) => {
-        const token = localStorage.getItem('healthify_token');
+        const token = localStorage.getItem('carex_token');
         if (token) {
           config.headers.Authorization = `Bearer ${token}`;
         }
@@ -33,7 +33,7 @@ class ApiService {
       (error: AxiosError) => {
         if (error.response?.status === 401) {
           // Token expired or invalid
-          localStorage.removeItem('healthify_token');
+          localStorage.removeItem('carex_token');
           window.location.href = '/login';
         }
         return Promise.reject(error);

@@ -104,14 +104,14 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   // Check for existing token on app load
   useEffect(() => {
     const checkAuth = async () => {
-      const token = localStorage.getItem('healthify_token');
+      const token = localStorage.getItem('carex_token');
       if (token) {
         try {
           dispatch({ type: 'AUTH_START' });
           const response = await apiService.getProfile();
           dispatch({ type: 'AUTH_SUCCESS', payload: response.user });
         } catch (error) {
-          localStorage.removeItem('healthify_token');
+          localStorage.removeItem('carex_token');
           dispatch({ type: 'AUTH_FAILURE', payload: 'Session expired' });
         }
       } else {
@@ -127,7 +127,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       dispatch({ type: 'AUTH_START' });
       const response: AuthResponse = await apiService.login({ email, password });
       
-      localStorage.setItem('healthify_token', response.token);
+      localStorage.setItem('carex_token', response.token);
       dispatch({ type: 'AUTH_SUCCESS', payload: response.user });
     } catch (error: any) {
       const errorMessage = error.response?.data?.message || 'Login failed';
@@ -146,7 +146,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       dispatch({ type: 'AUTH_START' });
       const response: AuthResponse = await apiService.register(userData);
       
-      localStorage.setItem('healthify_token', response.token);
+      localStorage.setItem('carex_token', response.token);
       dispatch({ type: 'AUTH_SUCCESS', payload: response.user });
     } catch (error: any) {
       const errorMessage = error.response?.data?.message || 'Registration failed';
@@ -156,7 +156,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   const logout = () => {
-    localStorage.removeItem('healthify_token');
+    localStorage.removeItem('carex_token');
     dispatch({ type: 'LOGOUT' });
   };
 

@@ -53,7 +53,7 @@ app.use('/api/logs', logRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Healthify API is running' });
+  res.json({ status: 'OK', message: 'CareX API is running' });
 });
 
 // Global error handler
